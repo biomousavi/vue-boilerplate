@@ -30,5 +30,5 @@ export default defineNuxtConfig({
     quality: 70,
   },
 
-  modules: ["@nuxt/eslint", "@nuxt/image"],
+  modules: ["@nuxt/eslint", "@nuxt/image", "nuxt-typed-router"],
 });

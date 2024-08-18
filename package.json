@@ -15,6 +15,7 @@
     "@nuxt/eslint": "^0.5.0",
     "@nuxt/image": "^1.7.0",
     "nuxt": "^3.12.4",
+    "nuxt-typed-router": "^3.6.5",
     "vue": "latest"
   },
   "volta": {
