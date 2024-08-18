@@ -30,5 +30,25 @@ export default defineNuxtConfig({
     quality: 70,
   },
 
-  modules: ["@nuxt/eslint", "@nuxt/image", "nuxt-typed-router"],
+  // Nuxt Security Module Config
+  security: {
+    rateLimiter: false,
+    headers: {
+      // To Use Nuxt DevTools
+      crossOriginEmbedderPolicy:
+        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
+    },
+  },
+
+  site: {
+    // TODO: change it to real website URL
+    url: "https://example.com",
+  },
+
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/image",
+    "nuxt-typed-router",
+    "nuxt-security",
+  ],
 });
