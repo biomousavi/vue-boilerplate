@@ -12,5 +12,16 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/eslint"]
+  eslint: {
+    config: {
+      // Using eslint stylistic instead of prettier
+      stylistic: {
+        semi: true,
+        indent: 2,
+        quotes: "double",
+      },
+    },
+  },
+
+  modules: ["@nuxt/eslint"],
 });
