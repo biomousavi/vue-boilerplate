@@ -12,5 +12,9 @@
   "dependencies": {
     "nuxt": "^3.12.4",
     "vue": "latest"
+  },
+  "volta": {
+    "node": "20.16.0",
+    "npm": "10.8.2"
   }
 }
