@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
 
+  // Env Configs
   runtimeConfig: {
     // accessible only on server side
     stripeSecret: "should be override in .env file",
@@ -12,6 +13,7 @@ export default defineNuxtConfig({
     },
   },
 
+  // Eslint Config
   eslint: {
     config: {
       // Using eslint stylistic instead of prettier
@@ -21,6 +23,11 @@ export default defineNuxtConfig({
         quotes: "double",
       },
     },
+  },
+
+  // image module config
+  image: {
+    quality: 70,
   },
 
   modules: ["@nuxt/eslint", "@nuxt/image"],
