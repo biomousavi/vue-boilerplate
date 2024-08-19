@@ -45,10 +45,29 @@ export default defineNuxtConfig({
     url: "https://example.com",
   },
 
+  fonts: {
+    provider: "google",
+    defaults: {
+      weights: [400],
+      styles: ["normal", "italic"],
+      subsets: [
+        "cyrillic-ext",
+        "cyrillic",
+        "greek-ext",
+        "greek",
+        "vietnamese",
+        "latin-ext",
+        "latin",
+      ],
+    },
+  },
+
   modules: [
     "@nuxt/eslint",
     "@nuxt/image",
     "nuxt-typed-router",
     "nuxt-security",
+    "@nuxt/fonts",
+    "@nuxtjs/seo",
   ],
 });
