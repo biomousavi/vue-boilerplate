@@ -25,6 +25,11 @@ export default defineNuxtConfig({
     },
   },
 
+  // Vite Vue options
+  vue: {
+    propsDestructure: true,
+  },
+
   // image module config
   image: {
     quality: 70,
