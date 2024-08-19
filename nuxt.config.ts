@@ -3,6 +3,15 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
 
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "en",
+        charset: "utf-8",
+      },
+    },
+  },
+
   // Env Configs
   runtimeConfig: {
     // accessible only on server side
@@ -74,5 +83,6 @@ export default defineNuxtConfig({
     "nuxt-security",
     "@nuxt/fonts",
     "@nuxtjs/seo",
+    "@nuxtjs/html-validator",
   ],
 });
